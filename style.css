@@ -1,0 +1,167 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: .2s;
+    box-sizing: border-box;
+    color: #fff;
+    accent-color: #727272;
+}
+
+body {
+    background-image: url(media/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#0000009f, #0000009f);
+    z-index: -1;
+}
+
+.navbar {
+    padding: 20px 30px;
+}
+
+.navbar img {
+    width: 80px;
+}
+
+.container {
+    max-width: px;
+    margin: auto;
+}
+
+.login-form {
+    width: 100%;
+    min-height: px;
+    position: relative;
+    padding: 3rem;
+}
+
+.login-form .heading {
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.login-form .input-group {
+    height: 45px;
+    background: #333;
+    margin-bottom: 15px;
+    padding: 3px 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.login-form .input-group input {
+    background: transparent;
+    outline: none;
+    border: 0;
+    height: 25px;
+    font-size: 16px;
+    margin-top: 13px;
+}
+
+.login-form .input-group input::placeholder {
+    opacity: 0;
+}
+
+.login-form .input-group label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #8c8c8c;
+    font-size: 13px;
+    pointer-events: none;
+}
+
+.login-form .input-group input:focus + label {
+    top: 5px;
+    font-size: 11px;
+}
+
+.login-form .input-group input:not(:placeholder-shown) + label {
+    top: 5px;
+    font-size: 11px;
+}
+
+.sign-in-button {
+    padding: 12px;
+    width: 50%;
+    margin-top: 1px;
+    border-radius: 10px;
+    background: red;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group label {
+    font-size: 12px;
+    margin-left: 6px;
+    color: #8c8c8c;
+}
+
+.remember a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #8c8c8c;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+.sign-up {
+    margin-top: 80px;
+}
+
+.sign-up p {
+    color: #8c8c8c;
+    font-size: 16px;
+}
+
+.sign-up a {
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+.text-muted {
+    color: #8c8c8c;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.text-muted a {
+    text-decoration: none;
+    color: rgb(31, 88, 247);
+}
+
+.text-muted a:hover {
+    text-decoration: underline;
+}
